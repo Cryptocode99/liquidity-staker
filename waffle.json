@@ -1,7 +1,7 @@
 {
   "compilerType": "solcjs",
   "compilerVersion": "./node_modules/solc",
-  "sourceDirectory": "/home/odyomin/eliteswap/liquidity-staker/flattened_contracts/",
+  "sourceDirectory": "/home/odyomin/cryptocode99/liquidity-staker/flattened_contracts/",
   "outputType": "all",
   "compilerOptions": {
     "outputSelection": {

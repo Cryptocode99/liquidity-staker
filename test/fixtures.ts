@@ -4,7 +4,7 @@ import { solidity, deployContract } from 'ethereum-waffle'
 
 import { expandTo18Decimals } from './utils'
 
-import EliteswapV2ERC20 from '@eliteswap/v2-core/build/ERC20.json'
+import Cryptocode99V2ERC20 from '@cryptocode99/v2-core/build/ERC20.json'
 import TestERC20 from '../build/TestERC20.json'
 import EliteStakingRewards from '../build/EliteStakingRewards.json'
 import EliteStakingRewardsFactory from '../build/EliteStakingRewardsFactory.json'
@@ -22,7 +22,7 @@ interface EliteStakingRewardsFixture {
 export async function stakingRewardsFixture([wallet]: Wallet[]): Promise<EliteStakingRewardsFixture> {
   const rewardsDistribution = wallet.address
   const rewardsToken = await deployContract(wallet, TestERC20, [expandTo18Decimals(1000000)])
-  const stakingToken = await deployContract(wallet, EliteswapV2ERC20, [expandTo18Decimals(1000000)])
+  const stakingToken = await deployContract(wallet, Cryptocode99V2ERC20, [expandTo18Decimals(1000000)])
 
   const stakingRewards = await deployContract(wallet, EliteStakingRewards, [
     rewardsDistribution,

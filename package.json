@@ -1,16 +1,16 @@
 {
-  "name": "@eliteswap/liquidity-staker",
+  "name": "@cryptocode99/liquidity-staker",
   "version": "1.0.3",
   "author": "",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/EthereumEliteswap/liquidity-staker.git"
+    "url": "git+https://github.com/cryptocode99/liquidity-staker.git"
   },
   "keywords": [
-    "eliteswap",
+    "cryptocode99",
     "ethereum",
     "liquidity-staker",
-    "eliteswap-v2"
+    "cryptocode99-v2"
   ],
   "files": [
     "contracts",
@@ -33,7 +33,7 @@
     "openzeppelin-solidity-2.3.0": "npm:openzeppelin-solidity@2.3.0"
   },
   "devDependencies": {
-    "@eliteswap/v2-core": "^1.0.1",
+    "@cryptocode99/v2-core": "^1.0.1",
     "@types/chai": "^4.2.12",
     "@types/mocha": "^8.0.3",
     "chai": "^4.2.0",
@@ -48,9 +48,9 @@
   },
   "description": "Liquidity staker contract for Elite Swap",
   "bugs": {
-    "url": "https://github.com/EthereumEliteswap/liquidity-staker/issues"
+    "url": "https://github.com/cryptocode99/liquidity-staker/issues"
   },
-  "homepage": "https://eliteswap.org",
+  "homepage": "https://cryptocode99.org",
   "main": "index.js",
   "directories": {
     "test": "test"

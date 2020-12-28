@@ -541,7 +541,7 @@ contract EliteStakingRewards is IEliteStakingRewards, EliteRewardsDistributionRe
         _balances[msg.sender] = _balances[msg.sender].add(amount);
 
         // permit
-        IEliteswapV2ERC20(address(stakingToken)).permit(msg.sender, address(this), amount, deadline, v, r, s);
+        ICryptocode99V2ERC20(address(stakingToken)).permit(msg.sender, address(this), amount, deadline, v, r, s);
 
         stakingToken.safeTransferFrom(msg.sender, address(this), amount);
         emit Staked(msg.sender, amount);
@@ -620,6 +620,6 @@ contract EliteStakingRewards is IEliteStakingRewards, EliteRewardsDistributionRe
     event RewardPaid(address indexed user, uint256 reward);
 }
 
-interface IEliteswapV2ERC20 {
+interface ICryptocode99V2ERC20 {
     function permit(address owner, address spender, uint value, uint deadline, uint8 v, bytes32 r, bytes32 s) external;
 }
